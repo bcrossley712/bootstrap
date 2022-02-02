@@ -10,11 +10,7 @@
 
   <style>
     * {
-      outline: red solid 1px;
-    }
-
-    .row div {
-      height: 100px;
+      /* outline: red solid 1px; */
     }
   </style>
 
@@ -23,25 +19,64 @@
 <body>
 
   <section class="container">
-    <header class="row bg-primary">
-      <div class="col-3"></div>
-      <div class="col-9"></div>
+    <header class="row bg-primary p-1">
+      <div class="col-3">
+        <img src="//placehold.it/200x200" alt="" class="img-fluid">
+      </div>
+      <div class="col-9">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur.
+        </p>
+      </div>
     </header>
+
     <div class="row">
-      <div class="col-6"></div>
-      <div class="col-6"></div>
+      <div class="col-lg-6">
+        <img src="//placehold.it/200x200" alt="" class="img-fluid">
+      </div>
+      <div class="col-lg-6">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore fugiat numquam animi minus possimus
+          perferendis, non officia at ipsam fugit, aliquam beatae natus et saepe adipisci? Pariatur quod soluta fugiat.
+        </p>
+        <button class="btn btn-primary">Click Me</button>
+      </div>
     </div>
+
     <div class="row bg-primary">
-      <div class="col-6 m-auto"></div>
+      <div class="col-6 m-auto text-light">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, eligendi?</p>
+      </div>
     </div>
+
+
+
     <div class="row bg-secondary">
-      <div class="col-6"></div>
-      <div class="col-6"></div>
+
+      <div class="order-2 order-md-1 col-md-6 col-lg-9">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore fugiat numquam animi minus possimus
+          perferendis, non officia at ipsam fugit, aliquam beatae natus et saepe adipisci? Pariatur quod soluta fugiat.
+        </p>
+        <button class="btn btn-primary">Click Me</button>
+      </div>
+
+      <div class="order-1 order-md-2 col-md-6 col-lg-3">
+        <img src="//placehold.it/200x200" alt="" class="img-fluid">
+      </div>
+
     </div>
+
+
+
     <div class="row bg-danger">
-      <div class="col-4"></div>
-      <div class="col-4"></div>
-      <div class="col-4"></div>
+      <div class="col-4">
+        <img src="//placehold.it/200x200" alt="" class="img-fluid">
+      </div>
+      <div class="col-4">
+        <img src="//placehold.it/200x200" alt="" class="img-fluid">
+      </div>
+      <div class="col-4">
+        <img src="//placehold.it/200x200" alt="" class="img-fluid">
+      </div>
     </div>
   </section>
 
