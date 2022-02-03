@@ -8,32 +8,51 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>Bootstrap</title>
 
-  <style>
-    * {
-      /* outline: red solid 1px; */
-    }
-  </style>
-
 </head>
 
 <body>
 
-  <section class="container">
-    <header class="row bg-primary p-1">
-      <div class="col-3">
-        <img src="//placehold.it/200x200" alt="" class="img-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
       </div>
-      <div class="col-9">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur.
-        </p>
-      </div>
-    </header>
+    </div>
+  </nav>
+
+  <section class="container-fluid">
+
 
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-6 p-3 text-center">
         <img src="//placehold.it/200x200" alt="" class="img-fluid">
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 p-2">
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore fugiat numquam animi minus possimus
           perferendis, non officia at ipsam fugit, aliquam beatae natus et saepe adipisci? Pariatur quod soluta fugiat.
@@ -50,16 +69,16 @@
 
 
 
-    <div class="row bg-secondary">
+    <div class="row bg-secondary p-3">
 
-      <div class="order-2 order-md-1 col-md-6 col-lg-9">
+      <div class="order-2 order-md-1 col-md-6 col-lg-9 text-light">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore fugiat numquam animi minus possimus
           perferendis, non officia at ipsam fugit, aliquam beatae natus et saepe adipisci? Pariatur quod soluta fugiat.
         </p>
         <button class="btn btn-primary">Click Me</button>
       </div>
 
-      <div class="order-1 order-md-2 col-md-6 col-lg-3">
+      <div class="order-1 order-md-2 col-md-6 col-lg-3 text-center">
         <img src="//placehold.it/200x200" alt="" class="img-fluid">
       </div>
 
@@ -67,7 +86,7 @@
 
 
 
-    <div class="row bg-danger">
+    <div class="row bg-danger p-2">
       <div class="col-4">
         <img src="//placehold.it/200x200" alt="" class="img-fluid">
       </div>
@@ -81,5 +100,12 @@
   </section>
 
 </body>
+
+<script type="module">
+  import { Toast } from 'bootstrap.esm.min.js'
+
+  Array.from(document.querySelectorAll('.toast'))
+    .forEach(toastNode => new Toast(toastNode))
+</script>
 
 </html>

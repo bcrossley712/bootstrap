@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+  <link rel="stylesheet" href="style.css">
+  <title>Bootstrap SiteClone</title>
+
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+
+</head>
+
+<body class="debug">
+  <div class="container-fluid">
+    <header>Navbar</header>
+    <div class="row bg-primary text-light align-items-center">
+      <div class="col-6 h-75">
+        <h1>Heading 1, <strong>Bold Heading</strong></h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem similique voluptas eius! Facilis
+          accusantium consequatur nostrum laboriosam necessitatibus sint, est, ratione porro nobis, ipsum sit nam sunt
+          tempore quisquam excepturi.</p>
+        <div class="row justify-content-center text-center">
+          <div class="col-5">
+            <button class="btn btn-warning rounded-pill">Button 1</button>
+          </div>
+          <div class="col-5">
+            <button class="btn btn-warning rounded-pill">Button 2</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 img-fluid text-center"><img src="//placehold.it/350x350" alt=""></div>
+    </div>
+    <div class="row justify-content-center p-2 mb-2 mt-2">
+      <div class="col-4 text-center">
+        <h4 class="">Heading 4</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda ducimus quo eius, quibusdam magni ut est
+          atque dicta velit possimus quas sunt illum inventore?</p>
+      </div>
+    </div>
+    <div class="row p-3 mb-5 mt-2 text-center">
+      <div class="col-4 mb-5 p-3">
+        <div>icon</div>
+        <h5>Heading 5</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nesciunt.</p>
+      </div>
+      <div class="col-4 shadow p-3 mb-5 bg-body rounded">
+        <div>icon</div>
+        <h5>Heading 5</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nesciunt.</p>
+      </div>
+      <div class="col-4 mb-5 p-3">
+        <div>icon</div>
+        <h5>Heading 5</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nesciunt.</p>
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-6 img-fluid text-center"><img src="//placehold.it/350x350" alt=""></div>
+      <div class="col-6 h-75">
+        <h2 class="pb-3">Heading 2</h2>
+        <p class="pt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem similique voluptas eius!
+          Facilis
+          accusantium consequatur nostrum laboriosam necessitatibus sint, est, ratione porro nobis, ipsum sit nam sunt
+          tempore quisquam excepturi.</p>
+      </div>
+    </div>
+    <footer class="row bg-dark text-light text-center align-items-center">
+      <div class="col-4">Address</div>
+      <div class="col-4">
+        <div class="row justify-content-center">
+          <div class="col-5">icon</div>
+          <div class="col-5">icon</div>
+        </div>
+
+      </div>
+      <div class="col-4">Credits</div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
